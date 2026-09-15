@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: 'Inter', system-ui, sans-serif;
+
+	--color-brand-400: #fb923c;
+	--color-brand-500: #f97316;
+	--color-brand-600: #ea580c;
+}
+
+@layer base {
+	body {
+		@apply bg-gray-50 font-sans antialiased text-gray-900;
+	}
+	a,
+	button {
+		@apply cursor-pointer;
+	}
+	.popular-dish {
+		@apply p-4 flex gap-4 hover:shadow-xl transition-shadow;
+	}
+}
+
+@layer components {
+	.btn {
+		background-color: var(--color-brand-400);
+	}
+}
